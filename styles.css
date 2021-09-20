@@ -6,9 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-html{
-    scroll-behavior: smooth;
-}
+
 :root{
     --white:rgb(238, 238, 238);
     --grey:rgb(57, 58, 65);
