@@ -90,7 +90,7 @@ nav {
         overflow-x: hidden;
     }
     .navlinks{
-        position: absolute;
+        position: fixed;
         height: 92vh;
         top: 8vh;
         background-color: var(--grey);
