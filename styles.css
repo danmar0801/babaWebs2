@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --white:rgb(238, 238, 238);
+    --grey:rgb(57, 58, 65);
+    --blue: rgb(71, 141, 255);
+    --orange: rgb(218, 108, 57);
+    --orange-hover: rgb(255, 81, 0);
+}
+section{
+    display: flex;
+}
+body {
+    overflow-x: hidden; /* Hide scrollbars */
+    max-width: 100%;
+  }
+h3 {
+ font-size: 3vh;
+}
+p {
+    font-size: 2vh;;
+}
+/*NavBar*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 9vh;
+    background-color: var(--grey);
+    
+}
+.logo {
+    color: var(--white);
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.navlinks li{
+    list-style-type: none;
+}
+.navlinks a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.navlinks a:hover {
+    color: var(--blue);
+}
+
+/*Burger menue*/
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width:25px;
+    height:3px;
+    background-color:var(--white);
+    margin:5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:1120px) {
+    .navlinks{
+        width: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    .navlinks{
+        position: absolute;
+        height: 92vh;
+        top: 8vh;
+        background-color: var(--grey);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in;
+    }
+    .navlinks li{
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0);
+}
+@keyframes navLinkFade{
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        max-width: 100%;
+        overflow-x: hidden;
+
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+    
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/************************* welcome Section*************************/
+.welcome {
+    min-height: 60vh;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--blue);
+    padding: 2vh;
+}
+.welcome h1{
+    color: var(--white);
+}
+#wp{
+    color: var(--white);
+    text-align: left;
+}
+
+/*************************Section #2 about*************************/
+.about {
+    padding: 4vh 0;
+    background-color: var(--white);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.about h2 {
+    padding: 0 2vh;
+    text-align: center;
+    color: var(--orange);
+}
+.about #aboutP{
+    padding: 0 2vh;
+    text-align: center;
+    color: black;
+}
+.about button{
+    margin: 2vh 0;
+    background-color: var(--orange);
+    padding: 2vh;
+    border-radius: 20px;
+    border: none;
+}
+.about button:hover{
+    background-color: var(--orange-hover);
+}
+.about button a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5vh;
+}
+
+/*************************Section #3 highlight sats*************************/
+.highlightStats {
+    padding: 2vh;
+    background-color: var(--blue);
+}
+.stats {
+    width: 100%;
+    padding: 2vh;
+    background-color: var(--white);
+    border-radius: 24px;
+    box-shadow: 0 3px 8px black;
+    display: flex;
+    justify-content:space-around;
+}
+.stats h3 {
+    color: var(--orange)
+}
+.card {
+    margin: 1vh;
+    text-align: center;
+    
+}
+
+/*************************Section #4 Process*************************/
+.process {
+    min-height: 400px;
+    background-color: var(--grey);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    margin: 2vh;
+    color: var(--white);
+}
+.container{
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin: 2vh;
+    color: var(--grey);
+}
+.card2 {
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--grey);
+    padding: 3vh;
+}
+.card2 h3 {
+    color: var(--orange);
+}
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+}
+
+/*************************section #5 reviews*************************/
+.reviews {
+    min-height: 400px;
+    background-color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+.reviews h2 {
+    color: var(--orange);
+}
+.reviews p {
+    font-size: 2vh;
+}
+.reviews h4 {
+    text-align: right;
+}
+.reviews div {
+    margin-top: 2vh;
+}
+
+/*************************Section #6 Projects*************************/
+.projects {
+    background-color: var(--blue);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2vh;
+}
+.projects .card2 {
+    border-color: var(--blue);
+}
+.projects h2 {
+    margin: 2vh;
+    color: var(--white);
+}
+
+/*************************Section #7 Contact*************************/
+.contact {
+    padding: 3vh;
+    background-color: var(--grey);
+    justify-content: center;
+    align-items: center;
+}
+#contact {
+    margin-top: 2vh;
+    background-color: var(--orange);
+    padding: 2vh 5vh;
+    border-radius: 20px;
+    border: none;
+}
+#contact:hover{
+    background-color: var(--orange-hover);
+}
+#contact a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5vh;
+}
+
+/*************************contact paget*************************/
+/*************************Section #1 contact section*************************/
+.contact-Info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4vh 2vh;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .containers {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .contact-Info-form {
+    justify-content: center;
+
+  }
