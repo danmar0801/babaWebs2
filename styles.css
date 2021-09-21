@@ -366,6 +366,7 @@ input[type=text], select, textarea {
 
 }
 #about-h2{
+    margin-bottom: 1.5vh;
     color: var(--orange);
     text-align: center;
     font-size: 3vh;
@@ -373,9 +374,10 @@ input[type=text], select, textarea {
 #about-p{
     color: var(--grey);
     text-align: center;
+    margin: 0 1vh;
 }
 #about-button-a {
-    font-size: 1.5vh;
+    font-size: 1.8vh;
     color: var(--white);
 }
 /*************************Section #1 Landing section*************************/
@@ -402,6 +404,7 @@ input[type=text], select, textarea {
 }
 /*************************Section #2 who we are section*************************/
 .About-who-we-are{
+    padding: 4vh 0;
     background-color: var(--white);
 }
 #container-about-us{
@@ -413,6 +416,7 @@ input[type=text], select, textarea {
 }
 /*************************Section #3 our Work section*************************/
 .about-ourWork {
+    padding: 4vh 0;
     background-color: var(--grey);
     flex-direction: column;
     align-items: center;
@@ -423,6 +427,7 @@ input[type=text], select, textarea {
 }
 /*************************Section #4 reviews section*************************/
 .about-reviews{
+    padding: 4vh 0;
     display: flex;
     background-color: var(--blue);
     flex-direction: column;
@@ -431,6 +436,7 @@ input[type=text], select, textarea {
     color: var(--orange);
     text-align: center;
     font-size: 3vh;
+    margin-bottom: 1.5vh;
 }
 .about-reviews p {
     color: var(--white);
@@ -444,9 +450,9 @@ input[type=text], select, textarea {
 }
 /*************************Section #4 contact section*************************/
 .about-contact {
+    padding: 4vh 0;
     background-color: var(--grey);
     flex-direction: column;
-    padding-bottom: 3vh;
 }
 .about-contact p{
     text-align: center;
