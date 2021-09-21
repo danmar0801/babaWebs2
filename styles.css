@@ -368,7 +368,7 @@ input[type=text], select, textarea {
 #about-h2{
     color: var(--orange);
     text-align: center;
-    font-size: 5vh;
+    font-size: 3vh;
 }
 #about-p{
     color: var(--grey);
@@ -422,8 +422,32 @@ input[type=text], select, textarea {
     text-align: center;
 }
 /*************************Section #4 reviews section*************************/
-.about-review{
+.about-reviews{
     display: flex;
-    background-color: var(--white);
+    background-color: var(--blue);
     flex-direction: column;
+}
+#about-reviews-h2{
+    color: var(--orange);
+    text-align: center;
+    font-size: 3vh;
+}
+.about-reviews p {
+    color: var(--white);
+}
+.about-reviews h4 {
+    text-align: right;
+    color: var(--grey);
+}
+.about-reviews div {
+    margin: 0 3vh;
+}
+/*************************Section #4 contact section*************************/
+.about-contact {
+    background-color: var(--grey);
+    flex-direction: column;
+    padding-bottom: 3vh;
+}
+.about-contact p{
+    text-align: center;
 }
