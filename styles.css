@@ -38,6 +38,7 @@ p {
 .brand-title h2{
     margin: 0.5rem;
     font-size: 2vh;
+    color: var(--orange);
 }
 
 .navbar-links ul{
@@ -261,10 +262,17 @@ p {
 
 /*************************Section #7 Contact*************************/
 .contact {
+    flex-direction: column;
     padding: 3vh;
     background-color: var(--grey);
     justify-content: center;
     align-items: center;
+}
+#contact-title {
+    color: var(--orange);
+}
+#contact-text{
+    color: var(--white);
 }
 #contact {
     margin-top: 2vh;
