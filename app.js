@@ -1,26 +1,13 @@
-const navSlide = () => {
-    const burger =  document.querySelector('.burger');
-    const nav = document.querySelector('.navlinks');
-    const nav_Links = document.querySelectorAll('.navlinks li');
+const toggleButton = document.getElementsByClassName("toggle-button")[0]
+const navbarLinks = document.getElementsByClassName("navbar-links")[0]
+const line1 = document.getElementsByClassName("line1")[0]
+const line2 = document.getElementsByClassName("line2")[0]
+const line3 = document.getElementsByClassName("line3")[0]
 
-    burger.addEventListener('click',()=>{
-        nav.classList.toggle('nav-active');
-        nav_Links.forEach((link, index) => {
-        
-            if(link.style.animation) {
-                link.style.animation = ''; }
-                else {
-                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
-                };
-        });
-        burger.classList.toggle(`toggle`)
-    });
-}
-navSlide();
+toggleButton.addEventListener('click', ()=>{
+    navbarLinks.classList.toggle('active');
+    line1.classList.toggle('active');
+    line2.classList.toggle('active');
+    line3.classList.toggle('active');
+})
 
-var scrollEventHandler = function()
-{
-  window.scroll(0, window.pageYOffset)
-}
-
-window.addEventListener("scroll", scrollEventHandler, false);

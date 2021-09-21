@@ -28,117 +28,89 @@ p {
     font-size: 2vh;;
 }
 /*NavBar*/
-nav {
+.navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 9vh;
     background-color: var(--grey);
-    
-}
-.logo {
     color: var(--white);
-    font-size: 20px;
-    text-transform: capitalize;
-    letter-spacing: 2px;
 }
-.navlinks {
-    display: flex;
-    justify-content: space-around;
-    width: 25%;
-    max-width: 100%;
-    overflow-x: hidden;
-}
-.navlinks li{
-    list-style-type: none;
-}
-.navlinks a {
-    color: var(--white);
-    text-decoration: none;
-    font-size: 16px;
-    letter-spacing: 2px;
-    font-weight: bold;
+.brand-title h2{
+    margin: 0.5rem;
+    font-size: 2vh;
 }
 
-.navlinks a:hover {
+.navbar-links ul{
+    display: flex;
+    
+}
+.navbar-links li {
+    list-style: none
+}
+.navbar-links li a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li a:hover{
     color: var(--blue);
 }
 
-/*Burger menue*/
-
-.burger {
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
     display: none;
-    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
 }
-.burger div{
-    width:25px;
-    height:3px;
-    background-color:var(--white);
-    margin:5px;
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width:1120px) {
-    .navlinks{
-        width: 50%;
-    }
-}
-
-@media (max-width:768px) {
-    body{
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    .navlinks{
-        position: fixed;
-        height: 92vh;
-        top: 8vh;
-        background-color: var(--grey);
+@media (max-width: 490px) {
+    .toggle-button{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+    }
+    .navbar-links{
+        display: none;
         width: 100%;
-        transform: translateX(-100%);
-        transition: transform 0.4s ease-in;
-        will-change: transform;
     }
-    .navlinks li{
-        opacity: 0;
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .burger {
-        display: block;
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
     }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+
 }
 
-.nav-active{
-    transform: translateX(0);
+.line1.active{
+    transform: rotate(-45deg) translate(-5px,7px);
 }
-@keyframes navLinkFade{
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-        max-width: 100%;
-        overflow-x: hidden;
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-        max-width: 100%;
-        overflow-x: hidden;
-
-    }
-}
-
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-    
-}
-.toggle .line2{
+.line2.active{
     opacity: 0;
 }
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
+.line3.active{
+    transform: rotate(45deg) translate(-5px,-7px);
 }
+
 /************************* welcome Section*************************/
 .welcome {
     min-height: 60vh;
