@@ -398,10 +398,6 @@ input[type=text], select, textarea {
     background-size: 100% 500px;
     width: 100%;
 }
-#about-landing-pic {
-    width: 100%;
-    height: 5%;
-}
 /*************************Section #2 who we are section*************************/
 .About-who-we-are{
     padding: 4vh 0;
@@ -455,5 +451,76 @@ input[type=text], select, textarea {
     flex-direction: column;
 }
 .about-contact p{
+    text-align: center;
+}
+
+
+
+/*************************portfolio page*************************/
+#projects-h3{
+    margin-bottom: 1.5vh;
+    color: var(--orange);
+    font-size: 3vh;
+    text-align: center;
+}
+/*************************landing*************************/
+.projects-landing {
+    min-height: 60vh;
+    display: flex;
+}
+.projects-landing h2{
+    color: var(--white);
+    text-align: center;
+    padding-top: 35vh;
+    font-size: 5vh;
+}
+.projects-landing-picture{
+    background-image: url(pexels-pixabay-280222.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 60vh;
+    width: 100%;
+}
+@media screen and (max-width: 490px) {
+    .projects-landing {
+        min-height: 30vh;
+    }
+    .projects-landing-picture{
+        background-size: 100% 30vh;
+    }
+    .projects-landing h2{
+        padding-top: 18vh;
+    }
+}
+/*************************headliner*************************/
+.projects-headliner {
+    flex-direction: column;
+    text-align: center;
+    padding: 4vh 2vh;
+    background-color: var(--blue);
+    color: var(--white);
+}
+.projects-headliner h2{
+    margin-bottom: 1.5vh;
+    color: var(--orange);
+    font-size: 3vh;
+}
+.projects-images{
+    flex-direction: column;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.projects-galery{
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 250px;
+}
+.projects-image img{
+    width: 250px;
+}
+#projects-disc{
+    padding: 15px;
     text-align: center;
 }
