@@ -122,28 +122,42 @@ a{
 
 /************************* welcome Section*************************/
 .welcome {
-    min-height: 40vh;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: var(--blue);
-    padding: 2vh;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
 }
 .welcome h1{
+    padding: 1.5vh;
+    text-align: center;
+    font-size: 3.7vh;
     color: var(--white);
 }
-#wp{
-    color: var(--white);
-    text-align: left;
+.welcome-background-iamge{
+    background-image: url(pexels-roberto-nickson-2545122.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    width: 100%;
 }
-#welcome-picture{
-    width: 40%;
-}
-@media (max-width:1000px) {
-    #welcome-picture{
-        display: none;
+
+@media screen and (max-width: 490px) {
+    .welcome {
+        min-height: 90vw;
+    }
+    .welcome-background-iamge{
+        background-size: 170vw;
+    }
+    .welcome h1{
+        padding-top: 10vh;
+        text-align: left;
     }
 }
 
+#wp{
+    text-decoration: none;
+    color: var(--white);
+    text-align: left;
+    padding-left: 2vw;
+}
 /*************************Section #2 about*************************/
 .about {
     padding: 4vh 0;
@@ -294,13 +308,13 @@ a{
 #contact {
     margin-top: 2vh;
     background-color: var(--orange);
-    padding: 2vh 10vw;
+    padding: 1vh 7vw;
     border-radius: 20px;
     border: none;
 }
 @media (min-width:970px) {
     #contact{
-        padding: 2vh 7vw;
+        padding: 1.3vh 3vw;
     }
     
 }
