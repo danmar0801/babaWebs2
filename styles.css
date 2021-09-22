@@ -289,11 +289,12 @@ a{
 }
 #contact-text{
     color: var(--white);
+    text-decoration: none;
 }
 #contact {
     margin-top: 2vh;
     background-color: var(--orange);
-    padding: 2vh 5vh;
+    padding: 2vh 30vw;
     border-radius: 20px;
     border: none;
 }
@@ -501,7 +502,7 @@ input[type=text], select, textarea {
 }
 .projects-headliner h2{
     margin-bottom: 1.5vh;
-    color: var(--orange);
+    color: var(--white);
     font-size: 3vh;
 }
 .projects-images{
@@ -523,4 +524,28 @@ input[type=text], select, textarea {
 #projects-disc{
     padding: 15px;
     text-align: center;
+}
+@media (min-width:560px){
+    .projects-images{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .projects-galery{
+        width: 45vw;
+    }
+    .projects-image img{
+        width: 45vw;
+    }
+}
+@media (min-width:1060px){
+    .projects-images{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .projects-galery{
+        width: 25vw;
+    }
+    .projects-image img{
+        width: 25vw;
+    }
 }
