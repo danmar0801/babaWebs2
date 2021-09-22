@@ -471,24 +471,24 @@ input[type=text], select, textarea {
 .projects-landing h2{
     color: var(--white);
     text-align: center;
-    padding-top: 35vh;
+    padding-top: 30vh;
     font-size: 5vh;
 }
 .projects-landing-picture{
-    background-image: url(pexels-pixabay-280222.jpg);
+    background-image: url(pexels-roberto-nickson-2525903.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 60vh;
+    background-size: 100vw;
     width: 100%;
 }
 @media screen and (max-width: 490px) {
     .projects-landing {
-        min-height: 30vh;
+        min-height: 60vw;
     }
     .projects-landing-picture{
-        background-size: 100% 30vh;
+        background-size: 100vw;
     }
     .projects-landing h2{
-        padding-top: 18vh;
+        padding-top: 18vw;
     }
 }
 /*************************headliner*************************/
@@ -515,10 +515,10 @@ input[type=text], select, textarea {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 250px;
+    width: 95vw;
 }
 .projects-image img{
-    width: 250px;
+    width: 95vw;
 }
 #projects-disc{
     padding: 15px;
