@@ -7,10 +7,10 @@ Created navBar
 # layout
     header 
         navBar
-    section #1 weslome
+    section #1 welcome
     section #2 about
     Section #3 highlight sats
-    Section #4 proecss
+    Section #4 process
     section #5 reviews
     Section #6 Projects
     Section #7 Contact
