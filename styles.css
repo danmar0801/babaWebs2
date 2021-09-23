@@ -122,13 +122,14 @@ a{
 
 /************************* welcome Section*************************/
 .welcome {
-    min-height: 60vh;
+    min-height: 60vw;
     display: flex;
     justify-content: center;
 }
 .welcome h1{
-    padding: 1.5vh;
-    text-align: center;
+    padding-top: 10vw;
+    padding-left: 2vw;
+    text-align: left;
     font-size: 3.7vh;
     color: var(--white);
 }
@@ -139,16 +140,16 @@ a{
     width: 100%;
 }
 
-@media screen and (max-width: 490px) {
+@media (max-width: 490px) {
     .welcome {
-        min-height: 90vw;
+        min-height: 60vw;
     }
     .welcome-background-iamge{
-        background-size: 170vw;
+        background-size: 180vw;
     }
     .welcome h1{
-        padding-top: 10vh;
-        text-align: left;
+        padding-top: 9vw;
+        text-align: center;
     }
 }
 
